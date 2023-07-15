@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  # Django App
+  solopython_backend:
+   container_name: django
+   build: .
+   volumes:
+    - .:/app
+   ports:
+    - 8000:8000
